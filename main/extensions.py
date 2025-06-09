@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask_babel import Babel
 
-# ✅ إنشاء كائنات الامتدادات هنا
+# Create extension instances
+
 db = SQLAlchemy()
 babel = Babel()
-

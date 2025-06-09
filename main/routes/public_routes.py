@@ -6,6 +6,12 @@ public_bp = Blueprint("public", __name__)
 
 @public_bp.route("/resume")
 def resume():
+    """
+    Render the resume page with styled sections.
+
+    Returns:
+        Response: Rendered resume page template.
+    """
     sections = Section.query.all()
     section_title_css = get_css_setting("section_title_css", "font-size: 20px; color: #000")
     paragraph_css = get_css_setting("paragraph_css", "font-size: 14px; color: #444")
