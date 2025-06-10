@@ -74,7 +74,7 @@ flask run
 
 ## 🛠️ Next Step
 
-> 👉 [Go to llol_step01 →](https://github.com/TamerOnLine/llol_step02)
+> 👉 [Go to llol_step02 →](https://github.com/TamerOnLine/llol_step02)
 
 ---
 
