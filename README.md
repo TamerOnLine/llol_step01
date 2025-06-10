@@ -76,6 +76,14 @@ flask run
 
 > 👉 [Go to llol_step02 →](https://github.com/TamerOnLine/llol_step02)
 
+
+---
+
+
+## 📜 License
+
+This project is open-source under the MIT License. Feel free to explore and build upon it.
+
 ---
 
 ## 👨‍💻 Developer
