@@ -74,7 +74,7 @@ flask run
 
 ## 🛠️ Next Step
 
-> ✅ Step02: Manage resume paragraphs dynamically under each section.
+> 👉 [Go to llol_step01 →](https://github.com/TamerOnLine/llol_step02)
 
 ---
 
