@@ -139,3 +139,4 @@ def resume_builder():
     """
     sections = ResumeSection.query.order_by(ResumeSection.order).all()
     return render_template("admin/resume_builder.html.j2", sections=sections)
+

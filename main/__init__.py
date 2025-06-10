@@ -4,6 +4,8 @@ from .models.models import (
     ResumeParagraph, ResumeField, NavigationLink, LanguageOption
 )
 from .routes.admin_routes import admin_bp
+from .routes.admin_builder_routes import admin_builder_bp
+
 from .routes.public_routes import public_bp
 from .routes.main_routes import main_bp
 from .extensions import babel
@@ -38,6 +40,8 @@ def create_app():
     app.register_blueprint(main_bp)
     app.register_blueprint(admin_bp)
     app.register_blueprint(public_bp)
+    app.register_blueprint(admin_builder_bp)
+
 
     with app.app_context():
         db_path = os.path.join(app.instance_path, 'lebenslauf.db')
@@ -86,6 +90,8 @@ def insert_initial_navigation():
             {"label": "Settings", "icon": "🎨", "endpoint": "admin.manage_settings", "order": 3},
             {"label": "Resume", "icon": "📄", "endpoint": "public.resume", "order": 4},
             {"label": "Builder", "icon": "🧱", "endpoint": "admin.resume_builder", "order": 5}
+            
+
         ]
         for item in nav_items:
             link = NavigationLink(**item)
